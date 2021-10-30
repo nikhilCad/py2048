@@ -22,3 +22,10 @@ def printGrid():
 grid[random.randint(0,gridSize-1) , random.randint(0,gridSize-1)] = 2
 
 printGrid()
+
+while True:
+    inp = input("W A S or D : ")
+    
+    if inp.lower() == "w":
+        print("hi")
+        
