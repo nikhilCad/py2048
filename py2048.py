@@ -69,7 +69,7 @@ def startGame():
             ['.', '.', '.', '.'],
             ['2', '.', '2', '4']]
 
-    direction = {'L': 0, 'B': 1, 'R': 2, 'T': 3, 'X': 4}
+    direction = {'A': 0, 'S': 1, 'D': 2, 'W': 3, 'X': 4}
 
     printGrid(grid)
     loseStatus = 0
