@@ -75,8 +75,8 @@ def startGame():
     loseStatus = 0
     move.score = 0 # Score of the user
     while True:
-        tmp = input("\nL for left, R for right, T for top, B for bottom or\nPress X to end the game.\n")
-        if tmp in ["R", "r", "L", "l", "T", "t", "B", "b", "X", "x"]:
+        tmp = input("\nA for left, D for right, W for top, S for bottom or\nPress X to end the game.\n")
+        if tmp in ["D", "d", "A", "a", "W", "w", "S", "s", "X", "x"]:
             dir = direction[tmp.upper()]
             if dir == 4:
                 print("\nFinal score: ", str(move.score))
@@ -91,7 +91,7 @@ def startGame():
                     break
                 print("\nCurrent score: ", str(move.score) )
         else:
-            print("\nInvalid direction, please provide valid movement direction (L, B, R, T).")
+            print("\nInvalid direction, please provide valid movement direction (W, A, S, D).")
     return 0
 
 # Program starts here
